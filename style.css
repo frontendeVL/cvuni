@@ -6,7 +6,6 @@ body {
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
-  background-color: #f5f5f5;
   background: linear-gradient(to right bottom, #f4d4ed, #eff5ba);
 }
 
@@ -41,3 +40,113 @@ header {
   width: 65%;
   padding: 20px;
 }
+
+
+.theme-toggle-btn {
+  margin-top: 1rem;
+  padding: 15px 25px;
+  font-size: 18px;
+  background-color: pink;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  margin-left: 100rem;
+}
+
+body.dark-mode {
+  background: linear-gradient(to right bottom , rgb(42, 42, 92), rgb(0, 0, 0));
+  color: #f0f0f0;
+  .experience{
+    background: rgb(48, 48, 98);
+  }
+  .sidebar{
+    background: rgb(61, 58, 58);
+  }
+  footer{
+    background: linear-gradient(to left bottom, rgb(42, 42, 92), rgb(0, 0, 0));
+    color: white;
+  }
+  #modal form{
+    background: rgb(35, 35, 91);
+  }
+  #modal button{
+    background: rgb(13, 12, 12);
+    color: white;
+  }
+  #modal form label{
+    color: white;
+  }
+#modal input,#modal textarea{
+  background-color:gray;
+  border: none;
+  cursor: pointer;
+}
+}
+
+body.dark-mode .theme-toggle-btn {
+  background-color: #33223c;
+  color: white;
+}
+
+
+#modal form {
+  background-color: #feffe4;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 400px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#modal form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #8a2c65;
+}
+
+#modal input,
+#modal textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d08abf;
+  font-size: 16px;
+  resize: vertical;
+  background-color: #fff0f8;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#modal button {
+  background-color: #d63384;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#modal button:hover {
+  background-color: #b02a6f;
+}
+
+footer {
+  background: linear-gradient(to left bottom, #ffe4f2, #fff3c4); 
+  color: #6d4b5c; 
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Nunito Sans', sans-serif;
+  position: relative;
+  border-radius: 10px;
+}
+
+
+

@@ -12,9 +12,12 @@
 </head>
 <body>
   <header>
-    <h1>Valeriia Bilotserkovtseva</h1>
+   <div> <h1>Valeriia Bilotserkovtseva</h1>
     <p>Junior Frontend Developer</p>
     <img class="img-icon" src="imgs/photo_2025-04-21_22-08-25.jpg" alt="jennie">
+    </div>
+      <button id="themeToggle" class="theme-toggle-btn">Dark Theme</button>
+      
 </header>
 
 <div class="page">
@@ -81,6 +84,31 @@
   </ul>
 </section>
 
+</div>
+<footer id="footerInfo" style="margin-top: 20px; font-size: 14px;"></footer>
+<div id="modal" style="display:none;position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); align-items:center; justify-content:center;">
+  <form
+  action="https://formspree.io/f/mrbqjown"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your name:
+    <input type="name" name="name">
+  </label>
+  <label>
+    Phone number:
+    <input type="phone" name="phone">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
 </div>
 <script src="script.js"></script>
 </body>
